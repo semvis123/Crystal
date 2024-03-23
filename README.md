@@ -1,6 +1,8 @@
 # Crystal
 Headphone listening mode automations
 
+!! call mode is broken on rootless ios 16, and will cause safemode !!
+
 ## Installation
 1. Add this repository to your Package Manager: https://repo.litten.love
 2. Install Crystal
