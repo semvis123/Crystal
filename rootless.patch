@@ -1,0 +1,26 @@
+diff --git a/Makefile b/Makefile
+index 21262b8..0d6a986 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,5 +1,6 @@
+ export ARCHS = arm64 arm64e
+-export TARGET = iphone:clang:13.3.1
++export TARGET = iphone:clang:14.5
++export THEOS_PACKAGE_SCHEME = rootless
+ 
+ INSTALL_TARGET_PROCESSES = SpringBoard
+ SUBPROJECTS += Tweak Preferences
+
+diff --git a/control b/control
+index 1cfb26a..2bb4b5b 100644
+--- a/control
++++ b/control
+@@ -1,6 +1,6 @@
+ Package: love.litten.crystal
+ Name: Crystal 💎
+-Depends: mobilesubstrate, preferenceloader, ws.hbang.common (>= 1.14), firmware (>= 13.0)
++Depends: mobilesubstrate, preferenceloader, ws.hbang.common (>= 1.14), firmware (>= 15.0)
+ Version: 1.4.1
+ Architecture: iphoneos-arm
+ Description: Headphone listening mode automations
+
