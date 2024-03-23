@@ -5,11 +5,8 @@
 #import <Cephei/HBRespringController.h>
 #import "WelcomeViewController.h"
 
-@interface CSTAppearanceSettings : HBAppearanceSettings
-@end
-
 @interface CSTRootListController : HBRootListController
-@property(nonatomic, retain)CSTAppearanceSettings* appearanceSettings;
+@property(nonatomic, retain)HBAppearanceSettings* appearanceSettings;
 @property(nonatomic, retain)HBPreferences* preferences;
 @property(nonatomic, retain)UISwitch* enableSwitch;
 @property(nonatomic, retain)UIBarButtonItem* item;
