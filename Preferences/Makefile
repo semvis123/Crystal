@@ -2,7 +2,7 @@ BUNDLE_NAME = CrystalPreferences
 $(BUNDLE_NAME)_FILES = $(wildcard *.m)
 $(BUNDLE_NAME)_CFLAGS = -fobjc-arc -DTHEOS_LEAN_AND_MEAN
 $(BUNDLE_NAME)_INSTALL_PATH = /Library/PreferenceBundles
-$(BUNDLE_NAME)_PRIVATE_FRAMEWORKS = Preferences CoreGraphics
+$(BUNDLE_NAME)_PRIVATE_FRAMEWORKS = Preferences CoreGraphics CoreText UIKit
 $(BUNDLE_NAME)_EXTRA_FRAMEWORKS = Cephei CepheiPrefs
 
 include $(THEOS)/makefiles/common.mk
